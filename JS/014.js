@@ -48,3 +48,15 @@ console.log(typeof(cars)); // object
 const date = new Date("2022-03-25");
 console.log(date);
 console.log(typeof(date));
+
+//exponential Notation
+
+x = 123e5; //12300000
+y = 123e-5; //0.00123
+console.log("x=", x);
+console.log("y=", y);
+
+x = BigInt("123456789012345678901234567890");
+console.log("BigInt: ", x);
+
+console.log(typeof(caaar));
