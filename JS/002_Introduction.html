@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. Introduction</title>
+</head>
+<body>
+    <h1>JS Introduction</h1>
+
+    <h2>Что может делать JS</h2>
+
+    <p id="demo">JavaScript can change HTML content</p>
+
+    <button type="button" onclick="
+    document.getElementById('demo').innerHTML = 'Hello from JavaScript'">Нажми меня</button>
+
+    <p>
+        JavaScript может менять значения HTML-атрибутов.
+    </p>
+
+    <p>
+        В случае ниже JS меняет значение атрибута src (source) тега img
+    </p>
+
+    <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'"">
+        Включить свет
+    </button>
+
+    <img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="лампочка" style="width:100px">
+
+    <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">
+        Выключить свет
+    </button>
+
+    <p id="demo2">JS может менять стили HTML документов</p>
+    <button type="button" onclick="document.getElementById('demo2').style.fontSize='35px'">Нажми меня</button>
+
+
+    <p id="demo3">JS может скрывать HTML-элементы</p>
+    <button type="button" 
+    onclick="document.getElementById('demo3').style.display = 'none'">Скрыть элемент</button>
+
+    <p id="demo4" style="display:none">JS может показать HTML-элементы</p>
+    <button type="button" 
+    onclick="document.getElementById('demo4').style.display = 'block'">Показать элемент</button>
+</body>
+</html>
