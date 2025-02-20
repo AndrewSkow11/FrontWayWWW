@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+        }
+
+        .city {
+            background-color: tomato;
+            color: white;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .main {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Grid</h1>
+
+    <div class="grid-container">
+        <div class="city">
+            <h2>London</h2>
+            <p>
+                London is the capital city of England.
+            </p>
+            <p>
+                London has over 9 millions inhabitants.
+            </p>
+        </div>
+
+         <div class="city">
+            <h2>Oslo</h2>
+            <p>
+                Oslo is the capital city of Norway.
+            </p>
+            <p>
+                Oslo has over 700,000 inhabitants.
+            </p>
+        </div>
+
+         <div class="city">
+            <h2>London</h2>
+            <p>
+                Rome is the capital city of Italy.
+            </p>
+            <p>
+                Rome has over 4 millions inhabitants.
+            </p>
+        </div>
+    </div>
+
+        <h2>Multiple classes</h2>
+
+        <div class="grid-container">
+            <h3 class="city main">London</h3>
+            <h3 class="city">Paris</h3>
+            <h3 class="city">Tokyo</h3>
+        </div>
+
+        <button onclick="myFunction()">Скрыть элементы</button>
+        <button onclick="show()">Показать элементы</button>
+
+        <script>
+            function myFunction(){
+                let x = document.getElementsByClassName('city');
+                for (let i = 0; i < x.length; i++){
+                    x[i].style.display = "none";
+                }
+            }
+
+                function show(){
+                let x = document.getElementsByClassName('city');
+                for (let i = 0; i < x.length; i++){
+                    x[i].style.display = "grid";
+                }
+            }
+        </script>
+</body>
+</html>
